@@ -1,0 +1,81 @@
+<section class="relative h-[90vh] md:h-screen w-full flex items-center overflow-hidden bg-white pt-20 md:pt-24">
+    <!-- Carousel Background -->
+    <div id="hero-carousel" class="absolute inset-0 z-0">
+        <!-- Slide 1: Sanitary -->
+        <div class="carousel-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
+            <img alt="Sanitary Fittings" class="w-full h-full object-cover object-right md:object-center"
+                src="images/sanitary fittings and fixtures/bestImage.jpeg" />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <!-- Slide 2: Interior -->
+        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+            <img alt="Interior Design" class="w-full h-full object-cover"
+                src="images/interiorDesign/interiorDesignOfAOffice.jpeg" />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <!-- Slide 3: Signage -->
+        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+            <img alt="Signage" class="w-full h-full object-cover object-[65%_center] md:object-center"
+                src="images/signage/forHero.jpeg" />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <!-- Slide 4: Structural -->
+        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+            <img alt="Structural Fabrication" class="w-full h-full object-cover"
+                src="images/Structural fabrication/Roof Truss & Steel Structure.jpeg" />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <!-- Slide 5: Electric Appliances -->
+        <div class="carousel-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out">
+            <img alt="Electric Appliances" class="w-full h-full object-cover object-top"
+                src="images/electricAppliances/Kitchen.jpeg" />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+    </div>
+    <div class="container mx-auto px-8 md:px-16 relative z-10">
+        <div class="max-w-3xl space-y-6">
+            <h1 id="hero-title"
+                class="font-display-xl text-3xl sm:text-4xl md:text-7xl text-white text-shadow-premium leading-tight font-black uppercase transition-all duration-700 opacity-100">
+                FROM FITTING TO FABRICATION, <br />WE REALIZE YOUR VISION.
+            </h1>
+            <p id="hero-subtitle"
+                class="font-body-lg text-lg md:text-xl text-white font-bold tracking-wide uppercase opacity-90 transition-all duration-700">
+                INTEGRATED SOLUTIONS FOR INTERIORS, STRUCTURAL WORK, AND MERCHANDISE.
+            </p>
+            <div class="pt-6">
+                <a href="contact.html"
+                    class="inline-block bg-secondary text-white px-10 py-4 font-bold text-lg tracking-widest hover:bg-white hover:text-primary transition-all duration-500 rounded-sm">
+                    REQUEST A QUOTE
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel Dot Navigation -->
+    <div id="hero-dots" class="absolute bottom-20 md:bottom-12 left-1/2 -translate-x-1/2 z-10 flex gap-3 items-center">
+        <button
+            class="hero-dot w-3 h-3 rounded-full bg-white border-2 border-white transition-all duration-300 cursor-pointer hover:scale-125 active-dot"
+            data-slide="0" aria-label="Go to slide 1"></button>
+        <button
+            class="hero-dot w-3 h-3 rounded-full bg-transparent border-2 border-white/60 transition-all duration-300 cursor-pointer hover:scale-125"
+            data-slide="1" aria-label="Go to slide 2"></button>
+        <button
+            class="hero-dot w-3 h-3 rounded-full bg-transparent border-2 border-white/60 transition-all duration-300 cursor-pointer hover:scale-125"
+            data-slide="2" aria-label="Go to slide 3"></button>
+        <button
+            class="hero-dot w-3 h-3 rounded-full bg-transparent border-2 border-white/60 transition-all duration-300 cursor-pointer hover:scale-125"
+            data-slide="3" aria-label="Go to slide 4"></button>
+        <button
+            class="hero-dot w-3 h-3 rounded-full bg-transparent border-2 border-white/60 transition-all duration-300 cursor-pointer hover:scale-125"
+            data-slide="4" aria-label="Go to slide 5"></button>
+    </div>
+    <div class="absolute bottom-12 left-16 hidden md:block z-10">
+        <div class="flex gap-4 items-center">
+            <span class="w-20 h-[1px] bg-white/40"></span>
+            <span class="text-white font-label-sm text-label-sm tracking-widest">SCROLL TO EXPLORE</span>
+        </div>
+    </div>
+</section>

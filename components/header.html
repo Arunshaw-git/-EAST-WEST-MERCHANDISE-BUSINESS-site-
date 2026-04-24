@@ -1,0 +1,62 @@
+<nav
+    class="fixed top-0 w-full z-50 bg-white/40 dark:bg-slate-950/40 backdrop-blur-2xl border-b border-white/20 dark:border-slate-800/50 h-20 md:h-24 flex justify-between items-center px-4 md:px-16 max-w-[1920px] mx-auto transition-all duration-500">
+    <div class="flex items-center gap-2 md:gap-6">
+        <div class="h-16 md:h-20 flex items-center">
+            <img alt="Logo" class="h-14 md:h-20 w-auto object-contain" src="images/logo.png" />
+        </div>
+        <div
+            class="text-xs sm:text-sm md:text-xl font-black tracking-tighter text-[#0D1B2A] dark:text-white font-headline-lg leading-tight uppercase">
+            M/S EAST WEST <br />MERCHANDISE CO.
+        </div>
+    </div>
+    <div class="hidden lg:flex items-center space-x-6">
+        <a class="font-label-sm text-[12px] uppercase tracking-widest text-secondary transition-colors"
+            href="index.html">Home</a>
+        <span class="text-slate-300">|</span>
+        <a class="font-label-sm text-[12px] uppercase tracking-widest text-slate-600 hover:text-primary transition-colors"
+            href="#about">About Us</a>
+        <span class="text-slate-300">|</span>
+        <a class="font-label-sm text-[12px] uppercase tracking-widest text-slate-600 hover:text-primary transition-colors"
+            href="#services">Services</a>
+        <span class="text-slate-300">|</span>
+        <a class="font-label-sm text-[12px] uppercase tracking-widest text-slate-600 hover:text-primary transition-colors"
+            href="#">Blog</a>
+        <span class="text-slate-300">|</span>
+        <a class="font-label-sm text-[12px] uppercase tracking-widest text-slate-600 hover:text-primary transition-colors"
+            href="contact.html">Contact</a>
+    </div>
+    <div class="hidden lg:block">
+        <a href="contact.html"
+            class="bg-[#0D1B2A]/90 backdrop-blur-md text-white px-8 py-3 font-label-sm text-label-sm tracking-[0.1em] hover:bg-secondary transition-all duration-300 active:opacity-80 inline-block border border-white/10">
+            GET A QUOTE
+        </a>
+    </div>
+
+    <!-- Mobile Burger Button -->
+    <button id="mobile-menu-button"
+        class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50">
+        <span class="w-8 h-0.5 bg-primary transition-all duration-300"></span>
+        <span class="w-8 h-0.5 bg-primary transition-all duration-300"></span>
+        <span class="w-8 h-0.5 bg-primary transition-all duration-300"></span>
+    </button>
+
+</nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-primary/95 backdrop-blur-xl z-[60] flex flex-col items-center justify-center space-y-8 translate-x-full transition-transform duration-500 lg:hidden overflow-y-auto py-12">
+        <button id="close-menu-button" class="absolute top-8 right-8 text-white">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <a class="text-white text-2xl font-black uppercase tracking-widest hover:text-secondary transition-colors mobile-link"
+            href="index.html">Home</a>
+        <a class="text-white text-2xl font-black uppercase tracking-widest hover:text-secondary transition-colors mobile-link"
+            href="#about">About Us</a>
+        <a class="text-secondary text-2xl font-black uppercase tracking-widest border-2 border-secondary px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all mobile-link"
+            href="#services">Our Services</a>
+        <a class="bg-white text-primary text-2xl font-black uppercase tracking-widest px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all mobile-link"
+            href="contact.html">Contact Us</a>
+        <div class="pt-8">
+            <a href="contact.html" class="bg-secondary text-white px-12 py-4 font-black uppercase tracking-widest rounded-sm inline-block">GET A QUOTE</a>
+        </div>
+    </div>

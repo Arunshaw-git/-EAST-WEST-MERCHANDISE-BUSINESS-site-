@@ -7,9 +7,7 @@
     <title>Kitchen & Electric Systems | M/S East West Merchandise Co.</title>
     <link rel="icon" type="image/png" href="images/logo.png" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Manrope:wght@400;500;700&family=Noto+Serif:wght@400&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
     <script id="tailwind-config">
@@ -25,13 +23,13 @@
                         "surface-container": "#e6eeff",
                     },
                     "fontFamily": {
-                        "label-sm": ["Inter"],
-                        "body-md": ["Manrope"],
-                        "serif-accent": ["Noto Serif"],
-                        "headline-md": ["Inter"],
-                        "headline-lg": ["Inter"],
-                        "body-lg": ["Manrope"],
-                        "display-xl": ["Inter"]
+                        "label-sm": ["DM Sans", "sans-serif"],
+                        "body-md": ["DM Sans", "sans-serif"],
+                        "serif-accent": ["Cormorant Garamond", "serif"],
+                        "headline-md": ["Cormorant Garamond", "serif"],
+                        "headline-lg": ["Cormorant Garamond", "serif"],
+                        "body-lg": ["DM Sans", "sans-serif"],
+                        "display-xl": ["Cormorant Garamond", "serif"]
                     },
                     "fontSize": {
                         "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
@@ -230,68 +228,106 @@
 
 <body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
     <!-- Header Section -->
-    <nav
-        class="fixed top-0 w-full z-50 bg-white/95 dark:bg-slate-950/95 backdrop-blur-2xl border-b border-slate-200 dark:border-slate-800/50 h-20 md:h-24 flex justify-between items-center px-4 md:px-16 max-w-[1920px] mx-auto transition-all duration-500 shadow-sm">
-        <div class="flex items-center gap-2 md:gap-6">
-            <div class="h-16 md:h-20 flex items-center">
-                <img alt="Logo" class="h-14 md:h-20 w-auto object-contain" src="images/logo.png" />
+    <div class="fixed top-4 w-full z-50 px-4 md:px-12 pointer-events-none flex justify-center">
+        <nav
+            class="pointer-events-auto bg-white/80 dark:bg-slate-950/80 backdrop-blur-3xl shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-white/40 dark:border-slate-800/60 rounded-full h-16 md:h-20 w-full max-w-7xl flex justify-between items-center px-4 md:px-8 transition-all duration-500">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div
+                    class="h-10 md:h-12 w-10 md:w-12 bg-white rounded-full flex items-center justify-center p-1 shadow-sm">
+                    <img alt="Logo" class="h-full w-auto object-contain" src="images/logo.png" />
+                </div>
+                <div
+                    class="text-sm md:text-lg font-black tracking-tighter text-[#1d3057] dark:text-white leading-tight uppercase flex flex-col justify-center">
+                    <span class="leading-none">M/S EAST WEST</span>
+                    <span
+                        class="text-secondary text-[#db2730] text-[9px] md:text-[11px] tracking-widest mt-0.5">MERCHANDISE
+                        CO.</span>
+                </div>
             </div>
-            <div
-                class="text-xs sm:text-sm md:text-xl font-black tracking-tighter text-[#0D1B2A] dark:text-white font-headline-lg leading-tight uppercase">
-                M/S EAST WEST <br />MERCHANDISE CO.
+
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center space-x-2">
+                <a class="relative px-3 py-2 font-label-sm text-[11px] uppercase tracking-[0.15em] text-[#1d3057] hover:text-[#db2730] transition-colors group"
+                    href="index.html">
+                    Home
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#db2730] transition-all duration-300 group-hover:w-1/2"></span>
+                </a>
+                <a class="relative px-3 py-2 font-label-sm text-[11px] uppercase tracking-[0.15em] text-slate-500 hover:text-[#db2730] transition-colors group"
+                    href="index.html#about">
+                    About Us
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#db2730] transition-all duration-300 group-hover:w-1/2"></span>
+                </a>
+                <a class="relative px-3 py-2 font-label-sm text-[11px] uppercase tracking-[0.15em] text-slate-500 hover:text-[#db2730] transition-colors group"
+                    href="index.html#services">
+                    Services
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#db2730] transition-all duration-300 group-hover:w-1/2"></span>
+                </a>
+                <a class="relative px-3 py-2 font-label-sm text-[11px] uppercase tracking-[0.15em] text-slate-500 hover:text-[#db2730] transition-colors group"
+                    href="#">
+                    Blog
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#db2730] transition-all duration-300 group-hover:w-1/2"></span>
+                </a>
+                <a class="relative px-3 py-2 font-label-sm text-[11px] uppercase tracking-[0.15em] text-slate-500 hover:text-[#db2730] transition-colors group"
+                    href="contact.html">
+                    Contact
+                    <span
+                        class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-[#db2730] transition-all duration-300 group-hover:w-1/2"></span>
+                </a>
             </div>
-        </div>
-        <div class="hidden lg:flex items-center space-x-6">
-            <a class="font-label-sm text-[12px] uppercase tracking-widest text-slate-600 hover:text-primary transition-colors"
-                href="index.html">Home</a>
-            <span class="text-slate-300">|</span>
-            <a class="font-label-sm text-[12px] uppercase tracking-widest text-slate-600 hover:text-primary transition-colors"
-                href="index.html#about">About Us</a>
-            <span class="text-slate-300">|</span>
-            <a class="font-label-sm text-[12px] uppercase tracking-widest text-secondary transition-colors"
-                href="index.html#services">Services</a>
-            <span class="text-slate-300">|</span>
-            <a class="font-label-sm text-[12px] uppercase tracking-widest text-slate-600 hover:text-primary transition-colors"
-                href="#">Blog</a>
-            <span class="text-slate-300">|</span>
-            <a class="font-label-sm text-[12px] uppercase tracking-widest text-slate-600 hover:text-primary transition-colors"
-                href="contact.html">Contact</a>
-        </div>
-        <div class="hidden lg:block">
-            <a href="contact.html"
-                class="bg-[#0D1B2A] text-white px-8 py-3 font-label-sm text-label-sm tracking-[0.1em] hover:bg-secondary transition-all duration-300 active:opacity-80 inline-block border border-transparent">
-                GET A QUOTE
-            </a>
-        </div>
 
-        <!-- Mobile Burger Button -->
-        <button id="mobile-menu-button"
-            class="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 z-50">
-            <span class="w-8 h-0.5 bg-primary transition-all duration-300"></span>
-            <span class="w-8 h-0.5 bg-primary transition-all duration-300"></span>
-            <span class="w-8 h-0.5 bg-primary transition-all duration-300"></span>
-        </button>
+            <!-- Get a quote button -->
+            <div class="hidden lg:block">
+                <a href="contact.html"
+                    class="group relative inline-flex items-center justify-center px-6 py-2.5 bg-[#1d3057] text-white font-label-sm text-[11px] uppercase tracking-[0.15em] rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_4px_20px_rgba(219,39,48,0.3)]">
+                    <span
+                        class="absolute inset-0 w-0 bg-[#db2730] transition-all duration-300 ease-out group-hover:w-full"></span>
+                    <span class="relative z-10 flex items-center gap-2">
+                        GET A QUOTE
+                        <span
+                            class="material-symbols-outlined text-[14px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </span>
+                </a>
+            </div>
 
-    </nav>
+            <!-- Mobile Burger Button -->
+            <button id="mobile-menu-button"
+                class="lg:hidden flex flex-col justify-center items-end w-10 h-10 space-y-1.5 z-50 group cursor-pointer border-none bg-transparent">
+                <span class="w-6 h-[2px] bg-[#1d3057] transition-all duration-300 group-hover:bg-[#db2730]"></span>
+                <span
+                    class="w-4 h-[2px] bg-[#1d3057] transition-all duration-300 group-hover:w-6 group-hover:bg-[#db2730]"></span>
+                <span class="w-6 h-[2px] bg-[#1d3057] transition-all duration-300 group-hover:bg-[#db2730]"></span>
+            </button>
+        </nav>
+    </div>
 
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu"
-        class="fixed inset-0 bg-primary/95 backdrop-blur-xl z-[60] flex flex-col items-center justify-center space-y-8 translate-x-full transition-transform duration-500 lg:hidden overflow-y-auto py-12">
-        <button id="close-menu-button" class="absolute top-8 right-8 text-white">
-            <span class="material-symbols-outlined text-4xl">close</span>
+        class="fixed inset-0 bg-[#1d3057]/95 backdrop-blur-2xl z-[60] flex flex-col items-center justify-center space-y-8 translate-x-full transition-transform duration-500 lg:hidden overflow-y-auto py-12">
+        <button id="close-menu-button"
+            class="absolute top-6 right-6 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-[#db2730] transition-colors text-white cursor-pointer border-none">
+            <span class="material-symbols-outlined text-3xl">close</span>
         </button>
-        <a class="text-white text-2xl font-black uppercase tracking-widest hover:text-secondary transition-colors mobile-link"
-            href="index.html">Home</a>
-        <a class="text-white text-2xl font-black uppercase tracking-widest hover:text-secondary transition-colors mobile-link"
-            href="index.html#about">About Us</a>
-        <a class="text-secondary text-2xl font-black uppercase tracking-widest border-2 border-secondary px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all mobile-link"
-            href="index.html#services">Our Services</a>
-        <a class="bg-white text-primary text-2xl font-black uppercase tracking-widest px-8 py-3 rounded-full hover:bg-secondary hover:text-white transition-all mobile-link"
-            href="contact.html">Contact Us</a>
-        <div class="pt-8">
+        <div class="flex flex-col items-center space-y-6 w-full px-8">
+            <a class="text-white text-2xl font-black uppercase tracking-widest hover:text-[#db2730] transition-colors mobile-link w-full text-center border-b border-white/10 pb-4"
+                href="index.html">Home</a>
+            <a class="text-white text-2xl font-black uppercase tracking-widest hover:text-[#db2730] transition-colors mobile-link w-full text-center border-b border-white/10 pb-4"
+                href="index.html#about">About Us</a>
+            <a class="text-white text-2xl font-black uppercase tracking-widest hover:text-[#db2730] transition-colors mobile-link w-full text-center border-b border-white/10 pb-4"
+                href="index.html#services">Our Services</a>
+            <a class="text-white text-2xl font-black uppercase tracking-widest hover:text-[#db2730] transition-colors mobile-link w-full text-center border-b border-white/10 pb-4"
+                href="contact.html">Contact Us</a>
+        </div>
+        <div class="pt-4 w-full px-8">
             <a href="contact.html"
-                class="bg-secondary text-white px-12 py-4 font-black uppercase tracking-widest rounded-sm inline-block">GET
-                A QUOTE</a>
+                class="bg-[#db2730] text-white px-8 py-4 font-black uppercase tracking-widest rounded-full flex items-center justify-center gap-3 w-full hover:bg-white hover:text-[#db2730] transition-all duration-300 shadow-[0_4px_20px_rgba(219,39,48,0.4)] mobile-link">
+                GET A QUOTE
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+            </a>
         </div>
     </div>
 
@@ -567,7 +603,8 @@
                         <span class="text-sm flex flex-col">
                             <span class="font-bold text-white">Head Project Coordinator: Suman Sarkar</span>
                             <span class="flex items-center gap-1.5 mt-1">
-                                <span class="material-symbols-outlined text-[14px] text-secondary" data-icon="call">call</span>
+                                <span class="material-symbols-outlined text-[14px] text-secondary"
+                                    data-icon="call">call</span>
                                 <span>9830037045</span>
                             </span>
                         </span>
@@ -624,4 +661,22 @@
     </script>
 </body>
 
-</html>
+</html> }
+
+mobileMenuButton.addEventListener('click', toggleMenu);
+closeMenuButton.addEventListener('click', toggleMenu);
+
+mobileLinks.forEach(link => {
+link.addEventListener('click', () => {
+toggleMenu();
+});
+});
+
+// Toggle mobile description for service cards
+document.querySelectorAll('.service-image-hover').forEach(card => {
+card.addEventListener('click', () => {
+if (window.innerWidth <= 768) { const overlay=card.querySelector('.service-overlay');
+    overlay.classList.toggle('expanded'); } }); }); </script>
+    </body>
+
+    </html>

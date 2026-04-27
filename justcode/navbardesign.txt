@@ -1,0 +1,40 @@
+Viewed header.html:1-13
+
+Here is a prompt you can use to instruct any AI to recreate this exact navbar design in Tailwind CSS:
+
+***
+
+**Prompt for the AI:**
+
+"Design a highly premium, floating capsule-style navigation bar using Tailwind CSS and HTML. Please follow these exact specifications:
+
+1. **Overall Layout & Container:** 
+   - The navbar should be a 'floating capsule'. It must not touch the edges of the screen. Use `fixed top-4 w-full flex justify-center`. 
+   - The inner `<nav>` element should be pill-shaped (`rounded-full`), have a max width (`max-w-7xl`), and use flexbox to space between the logo, links, and CTA.
+   - Use an advanced glassmorphism effect: `bg-white/80 backdrop-blur-3xl border border-white/40` along with a soft, elevated shadow `shadow-[0_8px_32px_rgba(0,0,0,0.1)]`.
+
+2. **Logo Section:**
+   - On the left, include a circular white container with a subtle shadow for the logo image (`w-12 h-12 rounded-full p-1 bg-white shadow-sm`).
+   - Next to it, stack the company name in two lines. The top line should be 'M/S EAST WEST' in dark blue (`#1d3057`), font weight black, tight tracking. The bottom line should be 'MERCHANDISE CO.' in red (`#db2730`), very small text, and very wide tracking.
+
+3. **Desktop Navigation Links:**
+   - Center the navigation links. Hide them on mobile. 
+   - Typography: Uppercase, extra small text, widely tracked (letter-spacing), bold. Text color should be a slate gray or dark blue.
+   - **Hover Effect:** Implement an animated sliding underline. Give each link a pseudo-element or `<span>` positioned at the bottom that starts at `w-0` and expands to `w-1/2` (centered) with a red background (`#db2730`) on hover, using `transition-all duration-300`.
+
+4. **Call to Action (CTA) Button:**
+   - On the right, include a 'GET A QUOTE' button.
+   - It must be pill-shaped (`rounded-full`), dark blue background (`bg-[#1d3057]`), with white text.
+   - **Hover Effect:** Add a swipe-right background fill effect. Place an absolute positioned span inside the button that starts at `w-0` and expands to `w-full` with a red background (`#db2730`) on hover. Ensure the text sits above this background using `z-10`.
+   - Add a Material Symbols right arrow next to the text that translates 4px to the right (`group-hover:translate-x-1`) when the button is hovered.
+
+5. **Mobile Burger Button:**
+   - Hide the desktop links/CTA on mobile and show a custom hamburger button made of 3 horizontal `<span>` elements (dark blue). 
+   - On hover, the bars should turn red, and the middle bar should dynamically change its width.
+
+6. **Mobile Menu Overlay:**
+   - Create a full-screen mobile menu overlay (`fixed inset-0 z-[60]`) that translates in from the side.
+   - Background should be a dark blue glass effect (`bg-[#1d3057]/95 backdrop-blur-2xl`).
+   - Include a prominent circular close button at the top right.
+   - Center the navigation links vertically. Make them large, white, uppercase, and black font weight. Add a subtle bottom border (`border-white/10`) to separate them.
+   - Place a large, red, pill-shaped CTA button at the bottom of the links with a right arrow icon."
